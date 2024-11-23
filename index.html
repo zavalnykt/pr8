@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список товарів</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Корзина -->
+  <div class="cart" id="cart">
+    <img src="img/cart.png" alt="Корзина" id="cart-icon">
+    <span id="cart-count">0</span>
+  </div>
+
+  <h1>Список товарів</h1>
+
+  <!-- Контейнер для продуктів -->
+  <div id="products"></div>
+
+  <!-- Модальне вікно для корзини -->
+  <div class="modal" id="cart-modal">
+    <div class="modal-content">
+      <h2>Корзина</h2>
+      <div id="cart-items"></div> <!-- Тут буде відображатися список товарів у корзині -->
+      <button id="pay-button">Оплатити</button>
+      <button id="cart-modal-close">Закрити</button>
+    </div>
+  </div>
+
+  <!-- Модальне вікно для додавання товару -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <input type="number" id="quantity" min="1" style="display:none;">
+      <button id="modal-confirm">Додати</button>
+      <button id="modal-close">Закрити</button>
+    </div>
+  </div>
+
+  <script src="script/products.js"></script>
+</body>
+</html>
